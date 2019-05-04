@@ -19,7 +19,7 @@ var blogSchema = new mongoose.Schema({
     created:  {type: Date, default: Date.now}
 });
 
-var Blog = mongoose.model("Blog", blogSchema);
+var Blog = mongoose.model("Blog", blogSchema); //use to send data to renders
 
 app.get("/", function(req, res){
     res.redirect("/blogs");
