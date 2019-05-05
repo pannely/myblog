@@ -5,7 +5,7 @@ var express = require("express"),
     expressSanitizer = require("express-sanitizer"),
     methodOverride = require('method-override');
  
-mongoose.connect("mongodb+srv://pannely:<password>@cluster0Centuri0n89!.mongodb.net/restful_blog_app?retryWrites=true", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://pannely:Centuri0n89!@cluster0-ssszy.mongodb.net/test?retryWrites=true", {useNewUrlParser: true});
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(expressSanitizer());
 app.set("view engine", "ejs");
